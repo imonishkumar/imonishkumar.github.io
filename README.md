@@ -29,7 +29,12 @@ Welcome to my personal portfolio repository! This repository hosts the code and 
 - `assets/img/`: Image repository.
 
 ## 📸 Screenshots
-![Screenshot 1](assets/img/gif-Portfolio.gif)
+<p align="center">
+  <kbd>
+<img src="https://raw.githubusercontent.com/imonishkumar/imonishkumar.github.io/main/assets/img/gif-Portfolio.gif"></img>
+  </kbd>
+</p>
+
 ![Screenshot 2](assets/img/screenshot2.png)
 ![Screenshot 3](assets/img/screenshot3.png)
 ![Screenshot 4](assets/img/screenshot4.png)
