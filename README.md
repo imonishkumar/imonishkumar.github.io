@@ -29,10 +29,10 @@ Welcome to my personal portfolio repository! This repository hosts the code and 
 - `assets/img/`: Image repository.
 
 ## 📸 Screenshots
-![Screenshot 1](.assets/img/gif-Portfolio.gif)
-![Screenshot 2](.assets/img/screenshot2.png)
-![Screenshot 2](.assets/img/screenshot3.png)
-![Screenshot 2](.assets/img/screenshot4.png)
+![Screenshot 1](assets/img/gif-Portfolio.gif)
+![Screenshot 2](assets/img/screenshot2.png)
+![Screenshot 2](assets/img/screenshot3.png)
+![Screenshot 2](assets/img/screenshot4.png)
 
 ## 🤝 How to Contribute
 Found issues or have suggestions? Open an issue or create a pull request. Contributions are welcome!
