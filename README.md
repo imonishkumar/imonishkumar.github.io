@@ -29,10 +29,10 @@ Welcome to my personal portfolio repository! This repository hosts the code and 
 - `assets/img/`: Image repository.
 
 ## 📸 Screenshots
-![Screenshot 1](./img/gif-Portfolio.gif)
-![Screenshot 2](./img/screenshot2.png)
-![Screenshot 2](./img/screenshot3.png)
-![Screenshot 2](./img/screenshot4.png)
+![Screenshot 1](.assets/img/gif-Portfolio.gif)
+![Screenshot 2](.assets/img/screenshot2.png)
+![Screenshot 2](.assets/img/screenshot3.png)
+![Screenshot 2](.assets/img/screenshot4.png)
 
 ## 🤝 How to Contribute
 Found issues or have suggestions? Open an issue or create a pull request. Contributions are welcome!
@@ -43,6 +43,6 @@ This project is licensed under the [MIT License](LICENSE).
 ## 📬 Contact
 Connect with me on [LinkedIn](https://www.linkedin.com/in/monish-kumar-a-38777b1b6/) or [email](mailto:monishkumar.ai@outlook.com). Let's chat!
 
-**Visit my Personal Portfolio [here](https://github.com/imonishkumar/imonishkumar.github.io).**
+**Visit my Personal Portfolio [here](https://imonishkumar.github.io).**
 
 Thank you for visiting my portfolio repository! 🚀
