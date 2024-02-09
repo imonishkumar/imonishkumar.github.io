@@ -50,6 +50,6 @@ This project is licensed under the [MIT License](LICENSE).
 ## 📬 Contact
 Connect with me on [LinkedIn](https://www.linkedin.com/in/monish-kumar-a-38777b1b6/) or [email](mailto:monishkumar.ai@outlook.com). Let's chat!
 
-**Visit my Personal Portfolio [here](https://imonishkumar.github.io).**
+**Visit my Personal Portfolio <a href="https://imonishkumar.github.io" target="_blank">here</a>.**
 
 Thank you for visiting my portfolio repository! 🚀
