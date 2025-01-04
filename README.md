@@ -48,7 +48,7 @@ Found issues or have suggestions? Open an issue or create a pull request. Contri
 This project is licensed under the [MIT License](LICENSE).
 
 ## 📬 Contact
-Connect with me on [LinkedIn](https://www.linkedin.com/in/monish-kumar-a-38777b1b6/) or [email](mailto:monishkumar.ai@outlook.com). Let's chat!
+Connect with me on [LinkedIn](https://www.linkedin.com/in/monish-kumar-a-38777b1b6/) or [email](mailto:monishkumarpecai@gmail.com). Let's chat!
 
 **Visit my Personal Portfolio <a href="https://imonishkumar.github.io" target="_blank">here</a>.**
 
