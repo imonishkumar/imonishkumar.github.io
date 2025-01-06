@@ -17,8 +17,8 @@ Welcome to my personal portfolio repository! This repository hosts the code and 
 4. **Replace Images:** Update profile picture and other images in `assets/img/`.
 
 ## 💻 Technologies Used
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 
 ## 📁 Project Structure
