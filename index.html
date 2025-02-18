@@ -1,43 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      
-    <link rel="shortcut icon" href="./assets/img/profile-pic.png" />
-    <!-- Webpage Title -->
-    <title>Monish Kumar - Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/mediaqueries.css" />
-    <style>
-    
-    </style>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<body class="light-mode">
+
+  <link rel="shortcut icon" href="./assets/img/profile-pic.png" />
+  <!-- Webpage Title -->
+  <title>Monish Kumar - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/mediaqueries.css" />
+  <style>
+
+  /* Popup container */
+        .popup-container {
+            position: fixed;
+            top: 25%;
+            left:65%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+        /* Show popup */
+        .popup-container.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        /* Close button */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            color: #555;
+        }
+        .close-btn:hover {
+            color: #ff3b3b;
+        }
+        /* Heading */
+        .popup-container h2 {
+            color: #333;
+        }
+        /* Description */
+        .popup-container p {
+            font-size: 16px;
+            color: #666;
+        }
+        /* Portfolio button */
+        .portfolio-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+        .portfolio-btn:hover {
+            background-color: #0056b3;
+        }
+      </style>
   </head>
+
   <body>
-    
-    <ul class="menu-bar"> 
+    <div class="popup-container" id="popup">
+      <button class="close-btn" onclick="closePopup()">x</button>
+      <h2>New Portfolio is Live! 🚀</h2>
+      <p>Explore my latest projects and innovations in the newly launched portfolio.</p>
+      <p>See what's new!</p>
+      <a href="https://imonishkumarportfolio.netlify.app/" class="portfolio-btn" target="_blank">Check it Out</a>
+  </div>
+    <ul class="menu-bar">
       <li><a href="#">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
-  
+
     </ul>
-      <nav>
+    
+    <nav>
       <div class="navbar">
         <div class="container nav-container">
-            <input class="checkbox" style="display: flex; margin-top: -13px;" type="checkbox"/>
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-            </div>  
-          <div class="logo">
-            <h1 class="moniii" ></h1>
+          <input class="checkbox" style="display: flex; margin-top: -13px;" type="checkbox" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
           </div>
-          <a class="portfolio" style="width: 100px; font-size: 200%;" > Portfolio
-        </a>
+          <div class="logo">
+            <h1 class="moniii"></h1>
+          </div>
+          <a class="portfolio" style="width: 100px; font-size: 200%;"> Portfolio
+          </a>
           <div class="menu-items">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -66,80 +134,58 @@
           </ul>
         </div>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume/resume-monish.pdf')"
-          >
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume/resume-monish.pdf')">
             Download CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
-          </button> 
+          </button>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/img/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="window.open('https://www.linkedin.com/in/monish-kumar-a-38777b1b6/', '_blank')"
-            />
-          <img
-            src="./assets/img/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="window.open('https://github.com/imonishkumar', '_blank')"
-            />
+          <img src="./assets/img/linkedin.png" alt="My LinkedIn profile" class="icon"
+            onclick="window.open('https://www.linkedin.com/in/monish-kumar-a-38777b1b6/', '_blank')" />
+          <img src="./assets/img/github.png" alt="My Github profile" class="icon"
+            onclick="window.open('https://github.com/imonishkumar', '_blank')" />
         </div>
       </div>
     </section>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
-      <div class="section-container" >
+      <div class="section-container">
         <div class="section__pic-container" style="margin-top: -100px;">
-          <img
-            src="./assets/img/profile-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
+          <img src="./assets/img/profile-pic.png" alt="Profile picture" class="about-pic" />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img
-                src="./assets/img/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/img/experience.png" alt="Experience icon" class="icon" />
               <h3>Experience</h3>
               <p>1 year <br />Jr. Robotics Service Engineer</p>
               <p><a href="https://www.igm-group.com/en" target="_blank">@igm Robotersystem - India</a></p>
             </div>
             <div class="details-container">
-              <img
-                src="./assets/img/education.png"
-                alt="Education icon"
-                class="icon"
-              />
+              <img src="./assets/img/education.png" alt="Education icon" class="icon" />
               <h3>Education</h3>
               <p>B.Tech AI & DS<br />Diploma in Electonics(Robotics)</p>
             </div>
           </div>
           <div class="text-container">
-          <p style="text-align: justify; color: #ffffff; ">👋 Hi! I'm a Final-year student at <a href="https://panimalar.ac.in/" target="_blank"> Panimalar Engineering College, Chennai</a>, specializing in Artificial Intelligence and Data Science. I'm passionate about using data to drive positive change and always eager to take on new challenges. Currently seeking an internship or entry-level position in Data Science or AI, I bring a strong work ethic and collaborative mindset.</p>
+            <p style="text-align: justify; color: #ffffff; ">👋 Hi! I'm a final-year student at <a
+                href="https://panimalar.ac.in/" target="_blank"> Panimalar Engineering College, Chennai</a>,
+              specializing in Artificial Intelligence and Data Science. I'm passionate about using data to drive
+              positive change and always eager to take on new challenges. Currently seeking an internship or entry-level
+              position in Data Science or AI, I bring a strong work ethic and collaborative mindset.</p>
 
             <p style="padding: 10px;  color: #069bff;">🌟 Previous Work Experience:</p>
-            
-          <p style="text-align: justify;  color: #ffffff;">Junior Service Engineer at IGM Roboticsystems India Pvt. Ltd. (2021-2022): Responsible for industrial robot installation, maintenance, and repair. Proficient in both independent and team-based work.</p>             
+
+            <p style="text-align: justify;  color: #ffffff;">Junior Service Engineer at IGM Roboticsystems India Pvt.
+              Ltd. (2021-2022): Responsible for industrial robot installation, maintenance, and repair. Proficient in
+              both independent and team-based work.</p>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/img/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+      <img src="./assets/img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
     </section>
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
@@ -149,63 +195,60 @@
           <div class="details-container">
             <h2 class="experience-sub-title">Previous Work Experience</h2>
             <div style="margin-top: -30px;" class="article-container">
-              <img
-              src="./assets/img/experience.png"
-              alt="Experience icon"
-              class="icon"
-            />
+              <img src="./assets/img/experience.png" alt="Experience icon" class="icon" />
               <articles>
-          
-                <div>
-                  <h3  style="margin-top: -40px;"  class="work-exp" >Jr. Service Engineer</h3>
-                  <p style="text-align: justify;"><span style="color: rgb(255, 170, 0); font-weight: 800;" class="igm">IGM Roboticsystems India Pvt. Ltd.  (2021-2022)</span> </p>
-                <ul style="color: #ffffff; padding-left: 30px; margin-top: 10px; text-align:justify; " class="experience-list">
-                <li>
-                  Installed, maintained, and repaired industrial robots to ensure optimal performance.
-              </li>
-              <li>
-                  Collaborated with a team to troubleshoot and resolve complex technical issues.
-              </li>
-              <li>
-                  Conducted routine inspections and preventive maintenance to minimize downtime.
-              </li>
-              <li>
-                  Trained and mentored junior technicians on best practices for robot maintenance and repair.
-              </li>
-            </ul>
 
-              </div>
+                <div>
+                  <h3 style="margin-top: -40px;" class="work-exp">Jr. Service Engineer</h3>
+                  <p style="text-align: justify;"><span style="color: rgb(255, 170, 0); font-weight: 800;"
+                      class="igm">IGM Roboticsystems India Pvt. Ltd. (2021-2022)</span> </p>
+                  <ul style="color: #ffffff; padding-left: 30px; margin-top: 10px;" class="experience-list">
+                    <li>
+                      Installed, maintained, and repaired industrial robots to ensure optimal performance.
+                    </li>
+                    <li>
+                      Collaborated with a team to troubleshoot and resolve complex technical issues.
+                    </li>
+                    <li>
+                      Conducted routine inspections and preventive maintenance to minimize downtime.
+                    </li>
+                    <li>
+                      Trained and mentored junior technicians on best practices for robot maintenance and repair.
+                    </li>
+                  </ul>
+
+                </div>
               </articles>
-              
-             
+
+
             </div>
           </div>
           <div class="details-container">
             <h2 class="experience-sub-title">Skills</h2>
             <img style="margin-top: -20px;" src="./assets/img/skill.png" alt="Experience icon" class="icon" />
             <div class="article-container">
-        
-                <article>
-                    <img src="./assets/img/lang.png" alt="Experience icon" class="icon" />
-                    <div>
-                      <h3>Languages:</h3>
-                      <p>Python, JavaScript, PHP, SQL, HTML, CSS</p>
-                    </div>
-                </article>
-        
-                <article>
-                    <img src="./assets/img/framework.png" alt="Experience icon" class="icon" />
-                    <div>
-                      <h3>Frameworks:</h3>
-                      <p>Django, Flask</p>
-                    </div>
-                </article>
-                <article>
-                  <img src="./assets/img/tech.png" alt="Experience icon" class="icon" />
-                  <div>
-                    <h3>Technologies:</h3>
-                    <p>Git, PostgreSQL, Firebase, Unity , Blender</p>
-                  </div>
+
+              <article>
+                <img src="./assets/img/lang.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Languages:</h3>
+                  <p>Python, JavaScript, PHP, SQL, HTML, CSS</p>
+                </div>
+              </article>
+
+              <article>
+                <img src="./assets/img/framework.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Frameworks:</h3>
+                  <p>Django, Flask</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/img/tech.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Technologies:</h3>
+                  <p>Git, PostgreSQL, Firebase, Unity , Blender</p>
+                </div>
               </article>
               <article>
                 <img src="./assets/img/ai.png" alt="Experience icon" class="icon" />
@@ -213,20 +256,15 @@
                   <h3>ML ,AI ,DS</h3>
                   <p>Pandas, NumPy, Matplotlib, Seaborn, NLTK, Power BI</p>
                 </div>
-            </article>
-            
-    
+              </article>
+
+
             </div>
-        </div>
-        
+          </div>
+
         </div>
       </div>
-      <img
-        src="./assets/img/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+      <img src="./assets/img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
     </section>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
@@ -235,171 +273,131 @@
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/img/mining.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
+              <img src="./assets/img/mining.jpg" alt="Project 1" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">Mining Law bot </h2>
             <div class="btn-container">
-              <button
-              class="btn btn-color-2 project-btn"
-              onclick="window.open('https://github.com/imonishkumar/law-bot', '_blank')"
-            >
-              Github
-            </button>
-            
-             
+              <button class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/imonishkumar/law-bot', '_blank')">
+                Github
+              </button>
+
+
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/img/gpab.jpg"
-                alt="Project 2"
-                class="project-img"
-              />
+              <img src="./assets/img/gpab.jpg" alt="Project 2" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">GP Authentication</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/imonishkumar/GPA', '_blank')"
-              >
+              <button class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/imonishkumar/GPA', '_blank')">
                 Github
               </button>
-             
+
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/img/mht.jpg"
-                alt="Project 3"
-                class="project-img"
-              />
+              <img src="./assets/img/mht.jpg" alt="Project 3" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">Health Tracker</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/imonishkumar/Mental-Health-Tracker', '_blank')"
-              >
+              <button class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/imonishkumar/Mental-Health-Tracker', '_blank')">
                 Github
               </button>
-            
+
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/img/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+      <img src="./assets/img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
     </section>
-    <section id="projects" >
+    <section id="projects">
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/img/super.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
+              <img src="./assets/img/super.jpg" alt="Project 1" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">
               Superstore Analysis Power Bi</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/imonishkumar/superstore-analysis', '_blank')"
-              >
+              <button class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/imonishkumar/superstore-analysis', '_blank')">
                 Github
               </button>
-             
+
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/img/sym.jpg"
-                alt="Project 2"
-                class="project-img"
-              />
+              <img src="./assets/img/sym.jpg" alt="Project 2" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">Symptom Checker Chatbot</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/imonishkumar/Symptom-Checker-Chatbot', '_blank')"
-              >
+              <button class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/imonishkumar/Symptom-Checker-Chatbot', '_blank')">
                 Github
               </button>
-           
+
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/img/art.jpg"
-                alt="Project 3"
-                class="project-img"
-              />
+              <img src="./assets/img/art.jpg" alt="Project 3" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">Illusion Art Gallery 3D Blender</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/imonishkumar/Illusion-Art-Gallery-A-3D-Blender-Showcase', '_blank')"
-              >
+              <button class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/imonishkumar/Illusion-Art-Gallery-A-3D-Blender-Showcase', '_blank')">
                 Github
               </button>
-           
+
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/img/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+      <img src="./assets/img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
     </section>
-  
+
     <section id="contact">
 
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/img/email1.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:monishkumarpecai@gmail.com" target="_blank">monishkumarpecai@gmail.com</a></p>
+          <img src="./assets/img/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:examplemail@gmail.com" target="_blank">monishkumar.ai@outlook.com</a></p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/img/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/imonishkumaru" target="_blank">LinkedIn</a></p>
+          <img src="./assets/img/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/monish-kumar-a-38777b1b6" target="_blank">LinkedIn</a></p>
         </div>
       </div>
-    </div>
+      </div>
     </section>
     <footer>
       <p class="endnav">Copyright &#169; 2024 Monish Kumar A. All Rights Reserved.</p>
     </footer>
-</div>
+    </div>
 
-    <script src="assets/js/script.js"></script>    
+    <script src="assets/js/script.js"></script>
+    <script>
+      // Show popup on page load after 2 seconds
+      window.onload = function () {
+          setTimeout(function () {
+              document.getElementById("popup").classList.add("show");
+          }, 1000);
+      };
+
+      // Close popup function
+      function closePopup() {
+          document.getElementById("popup").classList.remove("show");
+      }
+  </script>
   </body>
+
 </html>
